@@ -1,0 +1,277 @@
+html,
+body {
+    height: 100%;
+}
+
+:root {
+    --mygrey900: #141414;
+    --mygrey800: #1f1f1f;
+    --mygrey700: #333333;
+    --mygreen: #c4f82a;
+    --mywhite: #ffffff;
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(Fonts/Inter/static/Inter_24pt-Bold.ttf);
+
+}
+
+@font-face {
+    font-family: InterRegular;
+    src: url(Fonts/Inter/static/Inter_18pt-Regular.ttf);
+}
+
+
+body {
+    background-color: var(--mygrey900);
+
+}
+
+/*
+--------------------- MOBILE --------------------------
+*/
+
+@media (min-width:220px) and (max-width:419px) {
+    .carta {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        border-radius: 12px;
+        padding: 20px;
+        align-items: center;
+        color: var(--mywhite);
+        background-color: var(--mygrey800);
+    }
+
+    .card-img-top {
+        border-radius: 999px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .card-title {
+        font-family: InterBold;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0px;
+    }
+
+    .card-text {
+        font-family: InterBold;
+        color: var(--mygreen);
+        text-align: center;
+        font-size: 10px;
+        line-height: 150%;
+        letter-spacing: 0px;
+    }
+
+    .descriprtion {
+        font-family: InterRegular;
+        font-size: 10px;
+        line-height: 150%;
+        letter-spacing: 0px;
+        text-align: center;
+
+    }
+
+
+    .list-group-item {
+        border: none;
+        background-color: var(--mygrey800);
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .buttonlist {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        background-color: var(--mygrey700);
+        color: var(--mywhite);
+        font-family: InterBold;
+        font-size: 10px;
+        line-height: 150%;
+        letter-spacing: 0px;
+    }
+
+    .btn:hover {
+        background-color: var(--mygreen);
+        color: var(--mygrey900);
+    }
+
+}
+
+/*
+ --------------------- TABLET --------------------------
+*/
+
+@media (min-width:419px) and (max-width:767px) {
+    .carta {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        border-radius: 12px;
+        padding: 40px;
+        align-items: center;
+        color: var(--mywhite);
+        background-color: var(--mygrey800);
+        text-align: center;
+    }
+
+    .card-img-top {
+        border-radius: 999px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .card-title {
+        font-family: InterBold;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0px;
+
+    }
+
+    .card-text {
+        font-family: InterBold;
+        color: var(--mygreen);
+        text-align: center;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0px;
+    }
+
+    .descriprtion {
+        font-family: InterRegular;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0px;
+
+    }
+
+
+    .list-group-item {
+        border: none;
+        background-color: var(--mygrey800);
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .buttonlist {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        background-color: var(--mygrey700);
+        color: var(--mywhite);
+        font-family: InterBold;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0px;
+    }
+
+    .btn:hover {
+        background-color: var(--mygreen);
+        color: var(--mygrey900);
+    }
+
+}
+
+
+
+/*
+
+ --------------------- DESKTOP --------------------------
+
+*/
+
+@media (min-width:768px) {
+    .carta {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 26rem;
+        border-radius: 12px;
+        padding: 40px;
+        align-items: center;
+        color: var(--mywhite);
+        background-color: var(--mygrey800);
+    }
+
+    .card-img-top {
+        border-radius: 999px;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 24px;
+    }
+
+    .card-title {
+        font-family: InterBold;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0px;
+    }
+
+    .card-text {
+        font-family: InterBold;
+        color: var(--mygreen);
+        text-align: center;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0px;
+    }
+
+    .descriprtion {
+        font-family: InterRegular;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+
+    }
+
+    .card-body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+
+    .list-group-item {
+        border: none;
+        background-color: var(--mygrey800);
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .buttonlist {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        background-color: var(--mygrey700);
+        color: var(--mywhite);
+        font-family: InterBold;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0px;
+    }
+
+    .btn:hover {
+        background-color: var(--mygreen);
+        color: var(--mygrey900);
+    }
+
+}
